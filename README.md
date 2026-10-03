@@ -10,6 +10,19 @@
 
 ---
 
+## 🆕 Detecting Cyberattacks on IoT Devices: KAN vs. MLP vs. XGBoost
+
+* Investigated **Kolmogorov-Arnold Networks (KAN)** for IoT cyberattack detection and compared them with **MLP and XGBoost** using the CICIoT2023 dataset.
+* Prepared and evaluated the dataset by **removing duplicate records, separating training and test data**, and testing models across **5 random seeds** and training sizes from **500 to 446K samples**.
+* Implemented and benchmarked **KAN, MLP, and XGBoost** models to study accuracy, training time, and performance across different training sizes.
+* Found that KAN improved macro-F1 by **0.03 over a size-matched MLP**, while taking approximately **3× longer to train**; XGBoost achieved the highest macro-F1 (**0.837 vs. 0.651 for KAN**).
+* Analyzed model performance across attack classes and found **brute-force and web-based attacks** to be the most difficult to detect, with **F1 ≤ 0.53**.
+* Deployed the trained model as a cloud service on **Azure Kubernetes Service (AKS)** using **Docker, Terraform, and GitHub Actions**, including automated security checks.
+
+Code, scripts and result tables for this study are in [`LLM_Cybersecurity/`](./LLM_Cybersecurity).
+
+---
+
 ## 🔍 Overview
 
 This project investigates **Kolmogorov-Arnold Networks (KANs)** as an alternative to conventional **Multi-Layer Perceptrons (MLPs)** for IoT intrusion detection using the **CICIoT2023** dataset.
