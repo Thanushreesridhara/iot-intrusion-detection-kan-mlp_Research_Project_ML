@@ -1,0 +1,102 @@
+{
+  "seed": 42,
+  "classes": [
+    "Benign",
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "Web-based",
+    "BruteForce"
+  ],
+  "features": [
+    "Header_Length",
+    "Protocol Type",
+    "Time_To_Live",
+    "Rate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IGMP",
+    "IPv",
+    "LLC",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Variance"
+  ],
+  "n_units": {
+    "train": 214,
+    "val": 56,
+    "test": 77
+  },
+  "train_cap_per_class_per_file": 600,
+  "eval_frac": 0.3,
+  "cleaning_report": {
+    "train_feature_rows_with_conflicting_labels": 898,
+    "train_removed_duplicates": 5294,
+    "val_removed_duplicates": 675778,
+    "test_removed_duplicates": 1173612,
+    "val_removed_overlap_with_train": 27135,
+    "test_removed_overlap_with_train": 29506,
+    "test_removed_overlap_with_val": 189801
+  },
+  "class_counts": {
+    "train": {
+      "Benign": 1200,
+      "DDoS": 67425,
+      "DoS": 14373,
+      "Mirai": 31157,
+      "Recon": 2998,
+      "Spoofing": 1754,
+      "Web-based": 3599,
+      "BruteForce": 600
+    },
+    "val": {
+      "Benign": 38937,
+      "DDoS": 730336,
+      "DoS": 190439,
+      "Mirai": 104543,
+      "Recon": 30903,
+      "Spoofing": 21088,
+      "Web-based": 1116,
+      "BruteForce": 588
+    },
+    "test": {
+      "Benign": 108293,
+      "DDoS": 894449,
+      "DoS": 321065,
+      "Mirai": 145473,
+      "Recon": 30928,
+      "Spoofing": 20649,
+      "Web-based": 1085,
+      "BruteForce": 587
+    }
+  }
+}

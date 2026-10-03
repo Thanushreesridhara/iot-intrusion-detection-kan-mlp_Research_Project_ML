@@ -1,0 +1,7 @@
+.venv/
+data/
+raw/
+*.parquet
+xgb_model.json
+*.log
+__pycache__/
